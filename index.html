@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="weather.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg py-5">
+        <div class="container w-75">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="logo">
+                    <img src="img/logo@2x.png" class="w-25" alt="">
+                    <a class="navbar-brand text-white" href="#">Weather</a>
+                </div>
+                <ul class="navbar-nav ms-auto mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Live Cameras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Photos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="content">
+            <div>
+                <input type="search" id="search" placeholder="Find Your Location ....">
+                <input class="btn btn-primary" id="btnSearch" type="submit" value="Submit">
+            </div>
+            <div class="bd-color">
+                <div class="container">
+                    <div class="layer d-flex flex-row w-75" id="rowData">
+                        <div class="day1 w-100">
+                            <div class="header d-flex flex-row justify-content-between">
+                                <h6 class="text-secondary" id="day1-day">Friday</h6>
+                                <h6 class="text-secondary" id="day1-date">13 December</h6>
+                            </div>
+                            <div class="d1content d-flex flex-column m-3 py-3">
+                                <h5 class="text-secondary" id="city-name">Cairo</h5>
+                                <h1 class="text-white m-4" id="day1-temp">16.4°C</h1>
+                                <img id="day1-icon" class="w-25" src="img/113.png" alt="">
+                                <p class="m-1" id="day1-desc">Clear</p>
+                                <div class="deg d-flex flex-row">
+                                    <div class="d-flex flex-row">
+                                        <i class="fa-solid fa-umbrella me-2"></i>
+                                        <h6 class="text-secondary" id="day1-rain">20%</h6>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <i class="fa-solid fa-wind me-2"></i>
+                                        <h6 class="text-secondary" id="day1-wind">18 km/h</h6>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <i class="fa-regular fa-compass me-2 text-secondary"></i>
+                                        <h6 class="text-secondary" id="day1-wind-dir">East</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="day2 w-100">
+                            <div class="header">
+                                <h5 class="text-center text-secondary" id="day2-day">Saturday</h5>
+                            </div>
+                            <div class="d2content align-items-center  d-flex flex-column text-center py-5">
+                              <img id="day2-icon" class="w-25" src="img/113.png" alt="">
+                                <h4 class="text-white m-3" id="day2-temp">21.1°C</h4>
+                                <h6 class="m-3" id="day2-min-temp">12.3°C</h6>
+                                <p class="m-3" id="day2-desc">Sunny</p>
+                            </div>
+                        </div>
+
+                        <div class="day3 w-100">
+                            <div class="header">
+                                <h5 class="text-center text-secondary" id="day3-date">Sunday</h5>
+                            </div>
+                            <div class="d3content d-flex align-items-center flex-column text-center py-5">
+                              <img id="day3-icon" class="w-25  " src="img/113.png" alt="">
+                              <h4 class="text-white m-3" id="day3-temp">21.1°C</h4>
+                                <p class="text-secondary m-3" id="day3-min-temp">12.3°C</p>
+                                <p id="day3-desc">Sunny</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+<div class="footer  ">
+  <input type="search" placeholder="Find Your Location ....">
+  <input class="btn-footer btn btn-primary" id="btnFooter"  value="Submit">
+</div>
+<div class="icons   ">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-twitter"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-linkedin"></i>
+</div>
+<p class="text-white text-center mt-4 " >Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </footer>
+
+    <script src="weather.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js">
+</body>
+</html>
